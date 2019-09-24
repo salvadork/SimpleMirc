@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>mIRC</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <div id="root"></div>
+</body>
+
+<script>
+  setInterval(function () {
+    var red = Math.round(Math.random() * 255); // Red color 
+    var green = Math.round(Math.random() * 255); // Green color
+    var blue = Math.round(Math.random() * 255); // Blue color
+    var bg = "background: rgb(" + red + ", " + green + ", " + blue + ");";
+    var element = document.getElementById("root");
+    element.style = bg;
+  }, 1000);
+</script>
+
+</html>
